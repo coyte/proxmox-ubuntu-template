@@ -19,16 +19,16 @@ The process of creating a Ubuntu template following steps:
 **The following packages are added to the image**
 net-tools  
 nmap  
-locate
+locate  
 traceroute  
-- ntp
-- samba
-- nfs-common
-- stress
-- vnstat
-- logwatch
-- fail2ban
-- sendmail
+ntp  
+samba  
+nfs-common  
+stress  
+vnstat  
+logwatch  
+fail2ban  
+sendmail  
 
 
 **Configuration of the package and image defaults**
