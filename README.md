@@ -17,8 +17,8 @@ The process of creating a Ubuntu template following steps:
 [https://cloud-images.ubuntu.com/jammy/20230405/jammy-server-cloudimg-amd64.img](https://cloud-images.ubuntu.com/jammy/20230405/jammy-server-cloudimg-amd64.img)
 
 **The following packages are added to the image**
-- net-tools
-- nmap
+-net-tools
+-nmap
 - locate
 - traceroute
 - ntp
