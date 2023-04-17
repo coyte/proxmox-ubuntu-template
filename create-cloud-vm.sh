@@ -16,6 +16,7 @@ CI_USER=$2
 CI_PASS=$3 
 SEARCH_DOMAIN="teekens.info"
 SSH_KEYS="./ssh_key.txt"
+IMAGE=$4
 
 
 qm destroy ${VM_ID}
@@ -34,7 +35,7 @@ qm set ${VM_ID} --ide2 local-lvm:cloudinit
 qm set ${VM_ID} --boot c --bootdisk scsi0
 qm set ${VM_ID} --serial0 socket --vga serial0
 qm set ${VM_ID} --agent enabled=1
-qm importdisk ${VM_ID} jammy-server-cloudimg-amd64-qemu-agent.img local-lvm
+qm importdisk ${VM_ID} ${IMAGE} local-lvm
 qm set ${VM_ID} --scsihw virtio-scsi-pci --scsi0 local-lvm:vm-${VM_ID}-disk-0
 qm template ${VM_ID}
 
