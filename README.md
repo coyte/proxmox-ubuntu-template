@@ -82,7 +82,8 @@ You should now be able to see the template in the GUI. You can clone the templat
 
 qm clone \<TEMPLATEID\> \<VMID\> —full
 
-qm resize \<VMID\> \<DISKID\> \<newsize> (qm resize 100 scsi0 +5G)
+qm resize \<VMID\> \<DISKID\> \<newsize> (qm resize 100 scsi0 +5G)  
+cloud-init takes care of resizing partition
 
 qm set \<VMID\> --memory \<memsize\>
 
