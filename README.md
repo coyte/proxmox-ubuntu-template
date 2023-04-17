@@ -8,17 +8,15 @@ The process of creating a Ubuntu template following steps:
 2. Copy the scripts to the PVE server
 3. wget the desired image to the same directory
 4. copy the desired ssh host key to same directory in ssh_key.txt
-5. Run
+5. Run config-image script to modify the image
 ```
 ./config-image.sh <image-filename> 
 ``` 
-script to modify the image
-
-6. Run 
+6. Run create-cloud-template script to create a new template in proxmox and populate the cloud init entries
 ```
-create-cloud-template.sh <VMID> \<username\> \<password\> \<image-filename\>
+create-cloud-template.sh <VMID> <username> <password> <image-filename>
 ``` 
-script to create a new template in proxmox and populate the cloud init entries
+
 
 **The image used here is**
 
