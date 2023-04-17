@@ -9,7 +9,7 @@ The process of creating a Ubuntu template following steps:
 3. wget the desired image to the same directory
 4. copy the desired ssh host key to same directory in ssh_key.txt
 5. Run the config-image.sh script with filename of image as parameter
-6. Run the create-cloud-template.sh script, with parameters \<VMID\> \<username\> \<password\>
+6. Run the create-cloud-template.sh script, with parameters \<VMID\> \<username\> \<password\> \<image filename\>
 
 
 **The image used here is**
