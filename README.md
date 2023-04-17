@@ -10,13 +10,13 @@ The process of creating a Ubuntu template following steps:
 4. copy the desired ssh host key to same directory in ssh_key.txt
 5. Run
 ```
-./config-image.sh \<image-filename\> 
+./config-image.sh <image-filename> 
 ``` 
 script to modify the image
 
 6. Run 
 ```
-create-cloud-template.sh \<VMID\> \<username\> \<password\> \<image-filename\>
+create-cloud-template.sh <VMID> \<username\> \<password\> \<image-filename\>
 ``` 
 script to create a new template in proxmox and populate the cloud init entries
 
