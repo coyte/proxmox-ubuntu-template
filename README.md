@@ -22,7 +22,9 @@ create-cloud-template.sh <VMID> <username> <password> <image-filename>
 
 [https://cloud-images.ubuntu.com/jammy/20230405/jammy-server-cloudimg-amd64.img](https://cloud-images.ubuntu.com/jammy/20230405/jammy-server-cloudimg-amd64.img)
 
-**The following packages are added to the image**
+**The following packages are added to the image**  
+Edit the script to modify.  
+  
 net-tools  
 nmap  
 locate  
