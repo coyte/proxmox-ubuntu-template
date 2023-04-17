@@ -11,12 +11,14 @@ The process of creating a Ubuntu template following steps:
 5. Run
 ```
 ./config-image.sh \<image-filename\> 
-``` script to modify the image
+``` 
+script to modify the image
 
 6. Run 
 ```
 create-cloud-template.sh \<VMID\> \<username\> \<password\> \<image-filename\>
-``` script to create a new template in proxmox and populate the cloud init entries
+``` 
+script to create a new template in proxmox and populate the cloud init entries
 
 **The image used here is**
 
