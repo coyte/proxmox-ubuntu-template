@@ -57,11 +57,13 @@ Deactivated motd by removing executable flag
 
 Global  vimrc (/etc/vim/vimrc.local)
 
-- set number
-- set history=300
-- set nocompatible
-- set cursorline
-- set cursorcolumn
+```
+set number
+set history=300
+set nocompatible
+set cursorline
+set cursorcolumn
+```
 
 
 The create-cloud-template script creates a vm with assigned id, does a number of required modifications to it, adds the disk, sets the cloud-init vars and turns the VM in a template
