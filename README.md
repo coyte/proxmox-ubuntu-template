@@ -17,8 +17,8 @@ The process of creating a Ubuntu template following steps:
 [https://cloud-images.ubuntu.com/jammy/20230405/jammy-server-cloudimg-amd64.img](https://cloud-images.ubuntu.com/jammy/20230405/jammy-server-cloudimg-amd64.img)
 
 **The following packages are added to the image**
--net-tools
--nmap
+- net-tools
+- nmap
 - locate
 - traceroute
 - ntp
@@ -57,11 +57,11 @@ Deactivated motd by removing executable flag
 
 Global  vimrc (/etc/vim/vimrc.local)
 
-    - set number
-    - set history=300
-    - set nocompatible
-    - set cursorline
-    - set cursorcolumn
+- set number
+- set history=300
+- set nocompatible
+- set cursorline
+- set cursorcolumn
 
 
 The create-cloud-template script creates a vm with assigned id, does a number of required modifications to it, adds the disk, sets the cloud-init vars and turns the VM in a template
